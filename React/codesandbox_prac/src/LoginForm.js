@@ -1,6 +1,7 @@
 export default function LoginForm() {
-    return <div>
+    return <form>
         <input tpye="password" />
         <input type="text" />
-    </div>
+        <button>Login</button>
+    </form>
 }

@@ -1,6 +1,11 @@
+// tell webpack to include css files
 import "./styles.css";
+
 import Greeter from "./Greeter";
 import Dog from "./Dog";
+// import Die from "./Die";
+// Create 
+import DiceRolls from "./DiceRolls";
 
 import RandomPokemon from "./RandomPokemon";
 
@@ -9,6 +14,8 @@ export default function App() {
         <div className="App">
             <Greeter />
             <Dog />
+            <DiceRolls />
+            <RandomPokemon />
         </div>
     );
 }
