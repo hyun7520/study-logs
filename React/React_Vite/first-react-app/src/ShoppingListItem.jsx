@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function ShoppingListItem({ item, quantity, completed }) {
 
     const styles = {
@@ -10,6 +12,12 @@ export default function ShoppingListItem({ item, quantity, completed }) {
             {item} - {quantity}
         </li>
     );
+}
+
+ShoppingListItem.propTypes = {
+    item: PropTypes.string,
+    quantity: PropTypes.number,
+    completed: PropTypes.bool
 }
 
 {/* <ul>
