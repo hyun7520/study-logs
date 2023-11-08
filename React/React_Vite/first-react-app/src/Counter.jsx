@@ -6,7 +6,11 @@ export default function Counter() {
     // let num = 0;
 
     const incrementNum = () => {
+
         setNum(num + 1);
+        // num is not updated here,
+        // it will be updated when useState is called
+        console.log(`num: ${num}`);
     }
 
 
