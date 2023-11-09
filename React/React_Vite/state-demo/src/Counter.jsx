@@ -2,6 +2,9 @@ import { useState } from "react"
 
 export default function Counter() {
 
+    // react will not rerender if state is same 
+    console.log("Rerendered");
+
     const [count, setCount] = useState(0);
 
     const addOne = () => {
@@ -24,11 +27,16 @@ export default function Counter() {
         setCount(c => c + 1);
     }
 
+    const changeTen = () => {
+        setCount(10);
+    }
+
     return (
         <div>
             <p>Count: {count}</p>
             <button onClick={addOne}>+1</button>
             <button onClick={addThree}>+3</button>
+            <button onClick={changeTen}>Set to 10</button>
         </div>
     )
 }
