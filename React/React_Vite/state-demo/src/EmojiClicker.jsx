@@ -23,6 +23,16 @@ export default function EmojiClicker() {
 
         })
     }
+
+    // Change all emojis to heart emoji
+    const heartAllEmoji = () => {
+        setEmojis(prevEmojis => {
+            prevEmojis.map(e => {
+                return { ...e, emoji: "❤" }
+            })
+        })
+    }
+
     return (
         <div>
             {emojis.map((e) => (
@@ -42,6 +52,7 @@ export default function EmojiClicker() {
                 <span onClick={() => deleteEmoji(e.id)} key={e.id} style={{ fontSize: "4rem" }}>{e.emoji}</span>
             ))}
             <button onClick={addEmoji}>Add Emoji</button>
+            <button onClick={heartAllEmoji}>Make all hearts</button>
         </div>
     )
 }
