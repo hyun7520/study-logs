@@ -20,6 +20,8 @@ function App() {
 
       <LuckyN />
 
+      <LuckyN numDice={5} goal={20} />
+
       {/* <Counter /> */}
       {/* <Dumbo /> */}
       {/* <ScoreKeeper /> */}
